@@ -1,19 +1,21 @@
 import React from 'react'
 import { StyleSheet, Platform, Image, Text, View } from 'react-native'
-import { SwitchNavigator } from 'react-navigation'
+import { createSwitchNavigator } from 'react-navigation'
 import firebase from 'firebase'
 // import the different screens
 import Loading from './src/views/Loading'
 import SignUp from './src/views/SignUp'
 import Login from './src/views/Login'
+import LoginOptions from './src/views/LoginOptions'
 import Main from './src/views/Main'
 // create our app's navigation stack
 
-const Nav = SwitchNavigator(
+const Nav = createSwitchNavigator(
   {
     Loading,
     SignUp,
     Login,
+    LoginOptions,
     Main
   },
   {
@@ -21,7 +23,7 @@ const Nav = SwitchNavigator(
   }
 )
 
-class App extends Nav {
+class App extends React.Component {
   componentWillMount() {
     firebase.initializeApp({
       apiKey: 'AIzaSyDmh7ODJYwgaqr-Jeekiq0HXmH8hYNNiTI',
@@ -31,6 +33,10 @@ class App extends Nav {
       storageBucket: 'schedulingapp-v1.appspot.com',
       messagingSenderId: '506834437624'
     })
+  }
+
+  render() {
+    return <Nav />
   }
 }
 
