@@ -1,29 +1,28 @@
 {
-  "name": "RNFirebaseStarter",
+  "name": "rnfirebase-auth",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "babel-jest": "^23.4.0",
-    "babel-preset-react-native-stage-0": "^1.0.1",
-    "fs-extra": "^6.0.1",
-    "jest": "^23.4.0",
-    "react-test-renderer": "^16.4.1",
-    "replace-in-file": "^3.4.0"
+    "react-native-scripts": "1.14.0",
+    "jest-expo": "~27.0.0",
+    "react-test-renderer": "16.3.1"
   },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "rename": "node ./bin/rename.js",
-    "start": "react-native start",
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
     "test": "jest"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "jest-expo"
   },
   "dependencies": {
-    "fbjs": "^0.8.17",
-    "react": "^16.3.2",
-    "react-native": "^0.55.3",
-    "react-native-firebase": "^4.3.6"
+    "expo": "^27.0.1",
+    "firebase": "^5.3.1",
+    "react": "16.3.1",
+    "react-native": "~0.55.2",
+    "react-navigation": "^2.11.2"
   }
 }

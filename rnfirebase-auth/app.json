@@ -1,4 +1,5 @@
 {
-  "name": "RNFirebaseStarter",
-  "displayName": "RNFirebaseStarter"
+  "expo": {
+    "sdkVersion": "27.0.0"
+  }
 }
