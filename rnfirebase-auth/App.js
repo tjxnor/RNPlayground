@@ -8,6 +8,7 @@ import SignUp from './src/views/SignUp'
 import Login from './src/views/Login'
 import LoginOptions from './src/views/LoginOptions'
 import Main from './src/views/Main'
+import { config } from './config'
 // create our app's navigation stack
 
 const Nav = createSwitchNavigator(
@@ -25,13 +26,9 @@ const Nav = createSwitchNavigator(
 
 class App extends React.Component {
   componentWillMount() {
+    const { apiKey, authDomain, databaseURL, projectId, storageBucket, messagingSenderId } = config;
     firebase.initializeApp({
-      apiKey: 'AIzaSyDmh7ODJYwgaqr-Jeekiq0HXmH8hYNNiTI',
-      authDomain: 'schedulingapp-v1.firebaseapp.com',
-      databaseURL: 'https://schedulingapp-v1.firebaseio.com',
-      projectId: 'schedulingapp-v1',
-      storageBucket: 'schedulingapp-v1.appspot.com',
-      messagingSenderId: '506834437624'
+      apiKey, authDomain, databaseURL, projectId, storageBucket, messagingSenderId
     })
   }
 
