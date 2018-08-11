@@ -8,7 +8,7 @@ export default class SignUp extends React.Component {
     firebase
         .auth()
         .createUserWithEmailAndPassword(this.state.email, this.state.password)
-        .then(() => this.props.navigation.navigate('Main'))
+        // .then(() => this.props.navigation.navigate(''))
         .catch(error => this.setState({ errorMessage: error.message }))
   }
 
@@ -38,7 +38,7 @@ export default class SignUp extends React.Component {
         <Button title="Sign Up" onPress={this.handleSignUp} />
         <Button
           title="Already have an account? Login"
-          onPress={() => this.props.navigation.navigate('Login')}
+          onPress={() => this.props.navigation.navigate('LoginOptions')}
         />
       </View>
     )

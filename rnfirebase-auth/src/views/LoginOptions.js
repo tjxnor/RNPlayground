@@ -21,7 +21,7 @@ export default class LoginOptions extends React.Component {
         var credential = firebase.auth.GoogleAuthProvider.credential(
               result.idToken);
         firebase.auth().signInAndRetrieveDataWithCredential(credential)
-        .then(() => this.props.navigation.navigate('Main'))
+        // .then(() => this.props.navigation.navigate('Loading'))
         .catch(error => this.setState({ errorMessage: error.message }))
         // this.setState({
         //   signedIn: true,
@@ -60,7 +60,7 @@ export default class LoginOptions extends React.Component {
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
-      .then(() => this.props.navigation.navigate('Main'))
+      // .then(() => this.props.navigation.navigate('Loading'))
       .catch(error => this.setState({ errorMessage: error.message }))
   }
 
