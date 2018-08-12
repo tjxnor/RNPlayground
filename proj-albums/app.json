@@ -1,9 +1,0 @@
-{
-  "expo": {
-    "sdkVersion": "27.0.0"
-  },
-  "splash": {
-	"image": "./assets/noodle-splash.png",
-	"backgroundColor": "#FEF9B0"
-  }
-}

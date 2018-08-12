@@ -9,12 +9,11 @@ export default class Main extends React.Component {
     firebase
       .auth()
       .signOut()
-      .then(() => this.props.navigation.navigate('Loading'))
+      // .then(() => this.props.navigation.navigate(''))
       .catch(error => this.setState({ errorMessage: error.message }))
   }
   componentDidMount() {
     const { currentUser } = firebase.auth()
-    console.log(currentUser.photoURL)
     this.setState({ currentUser, photoUrl: currentUser.photoURL })
   }
 

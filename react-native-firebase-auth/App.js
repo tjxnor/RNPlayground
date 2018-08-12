@@ -8,8 +8,6 @@ import SignUp from './src/views/SignUp'
 import Login from './src/views/Login'
 import LoginOptions from './src/views/LoginOptions'
 import Main from './src/views/Main'
-import MainTabsNav from './src/MainTabsNav'
-import MainStackNav from './src/MainStackNav'
 import { config } from './config'
 // create our app's navigation stack
 
@@ -19,8 +17,6 @@ const Nav = createSwitchNavigator(
     SignUp,
     LoginOptions,
     Main,
-    MainStackNav,
-    MainTabsNav
   },
   {
     initialRouteName: 'Loading'

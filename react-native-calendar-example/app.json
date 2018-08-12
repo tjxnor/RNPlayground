@@ -4,6 +4,7 @@
   	"slug": "react-native-calendar-example",
     "sdkVersion": "27.0.0",
 	"privacy": "public",
-	"description": "App demostrating the features from the react-native-calendars library. The original version of the examples uses react-native-navigation which is not supported by Expo, so the project was modified to use react-navigation." 
+	"githubUrl": "https://github.com/tjxnor/RNPlayground/tree/master/react-native-calendar-example",
+	"description": "App demonstrating the features from the react-native-calendars library. The original version of the examples uses react-native-navigation which is not supported by Expo, so the project was modified to use react-navigation." 
   },
 }
