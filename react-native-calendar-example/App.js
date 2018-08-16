@@ -1,5 +1,3 @@
-import {Navigation} from 'react-native-navigation';
-
 import React from 'react';
 import { createStackNavigator } from 'react-navigation';
 
